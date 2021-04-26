@@ -1,0 +1,5 @@
+recursive-include pretix_regex_validation/static *
+recursive-include pretix_regex_validation/templates *
+recursive-include pretix_regex_validation/locale *
+include LICENSE
+exclude .gitlab-ci.yml
