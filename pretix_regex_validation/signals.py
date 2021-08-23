@@ -1,7 +1,7 @@
 from django.core.validators import RegexValidator
 from django.dispatch import receiver
 from django.urls import resolve, reverse
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from i18nfield.strings import LazyI18nString
 from pretix.base.settings import settings_hierarkey
 from pretix.control.signals import nav_event_settings
