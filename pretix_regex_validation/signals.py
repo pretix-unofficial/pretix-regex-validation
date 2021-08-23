@@ -48,10 +48,12 @@ def form_fields_overrides(sender, request, **kwargs):
             "validators": [
                 RegexValidator(
                     regex=v,
-                    message=LazyI18nString(
-                        sender.settings.regex_validation_config.get(
-                            f"{k}:message",
-                            _("Please enter a valid value."),
+                    message=str(
+                        LazyI18nString(
+                            sender.settings.regex_validation_config.get(
+                                f"{k}:message",
+                                _("Please enter a valid value."),
+                            )
                         )
                     ),
                 )
